@@ -103,3 +103,6 @@ $(document).ready(function(){
 		$(this).css("top", t);
 	});
 });
+
+
+// document.querySelector(".nube").animate
