@@ -1,0 +1,42 @@
+/*animaciones*/
+
+@keyframes aparece-izquierda
+{
+    from { 
+         transform: translateX(-500%); 
+         opacity: 0;
+            }
+    to { 
+         transform: translateX(0%); 
+         opacity: 1;
+            }
+}
+
+@keyframes mover-derecha
+{
+    from { 
+         transform: translateX(0%); 
+         opacity: 1;
+            }
+    to { 
+         transform: translateX(500%); 
+         opacity: 1;
+            }
+}
+
+.outscreen{
+	left:-1280px;
+}
+
+.inscreen{
+	left:2000px !important;
+	transition: left 5s;
+}
+ 
+.nubes
+{
+     animation: aparece-izquierda ease 3s forwards; 
+}
+.move-nubes{
+	animation: mover-derecha ease 3s infinite;
+}
