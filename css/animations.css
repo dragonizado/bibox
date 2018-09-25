@@ -12,6 +12,16 @@
             }
 }
 
+@keyframes aparece-desaparece
+{
+    from { 
+         opacity: 0;
+            }
+    to { 
+         opacity: .60;
+            }
+}
+
 @keyframes mover-derecha
 {
     from { 
@@ -36,6 +46,26 @@
 .nubes
 {
      animation: aparece-izquierda ease 3s forwards; 
+}
+
+.stars:nth-child(1){
+    animation: aparece-desaparece ease 1.5s infinite;
+}
+
+.stars:nth-child(2){
+    animation: aparece-desaparece ease 2.5s infinite;
+}
+.stars:nth-child(3){
+    animation: aparece-desaparece ease 2s infinite;
+}
+.stars:nth-child(4){
+    animation: aparece-desaparece ease 3.1s infinite;
+}
+.stars:nth-child(5){
+    animation: aparece-desaparece ease 2s infinite;
+}
+.stars:nth-child(6){
+    animation: aparece-desaparece ease 2.2s infinite;
 }
 .move-nubes{
 	animation: mover-derecha ease 3s infinite;
