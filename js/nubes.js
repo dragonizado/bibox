@@ -56,10 +56,10 @@ let position = [
 
 $(document).ready(function(){
 	$("#canvas_video img").each(function(index,data){
-		// var l = Math.floor(Math.random() * $("#canvas_video").width());
-		// var t = Math.floor(Math.random() * $("#canvas_video").height());
-		var	l = position[index].left+"px";
-		var	t = position[index].top+"px";
+		var l = Math.floor(Math.random() * $("#canvas_video").width());
+		var t = Math.floor(Math.random() * $("#canvas_video").height());
+		// var	l = position[index].left+"px";
+		// var	t = position[index].top+"px";
 
 		// alert("left="+l+"  top="+t);
 
