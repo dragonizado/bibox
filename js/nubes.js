@@ -54,39 +54,66 @@ const position_cloud = [
 	}
 ];
 
+// const postion_stars = [
+// 	{
+// 		"left":"78",
+// 		"top":"495"
+// 	},
+// 	{
+// 		"left":"266",
+// 		"top":"370"
+// 	},
+// 	{
+// 		"left":"660",
+// 		"top":"561"
+// 	},
+// 	{
+// 		"left":"1199",
+// 		"top":"437"
+// 	},
+// 	{
+// 		"left":"342",
+// 		"top":"159"
+// 	},
+// 	{
+// 		"left":"975",
+// 		"top":"43"
+// 	},
+// ];
+
+
 const postion_stars = [
 	{
-		"left":"78",
-		"top":"495"
+		"left":"6",
+		"top":"76"
 	},
 	{
-		"left":"266",
-		"top":"370"
+		"left":"20",
+		"top":"57"
 	},
 	{
-		"left":"660",
-		"top":"561"
+		"left":"48",
+		"top":"85"
 	},
 	{
-		"left":"1199",
-		"top":"437"
+		"left":"87",
+		"top":"67"
 	},
 	{
-		"left":"342",
-		"top":"159"
+		"left":"24",
+		"top":"23"
 	},
 	{
-		"left":"975",
-		"top":"43"
+		"left":"72",
+		"top":"5"
 	},
 ];
-
 $(document).ready(function(){
 	$("#canvas_video img").each(function(index,data){
-		// var l = Math.floor(Math.random() * $("#canvas_video").width());
-		// var t = Math.floor(Math.random() * $("#canvas_video").height());
-		var	l = position_cloud[index].left+"px";
-		var	t = position_cloud[index].top+"px";
+		var l = Math.floor(Math.random() * $("#canvas_video").width());
+		var t = Math.floor(Math.random() * $("#canvas_video").height());
+		// var	l = position_cloud[index].left+"px";
+		// var	t = position_cloud[index].top+"px";
 
 		$(this).css("left", l);
 		$(this).css("top", t);
@@ -96,8 +123,8 @@ $(document).ready(function(){
 		// var l = Math.floor(Math.random() * $("#canvas_video_stars").width());
 		// var t = Math.floor(Math.random() * $("#canvas_video_stars").height());
 
-		var	l = postion_stars[index].left+"px";
-		var	t = postion_stars[index].top+"px";
+		var	l = postion_stars[index].left+"%";
+		var	t = postion_stars[index].top+"vh";
 
 		$(this).css("left", l);
 		$(this).css("top", t);
